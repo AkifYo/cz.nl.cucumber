@@ -38,7 +38,7 @@ public class Driver {
                     break;
                 default:
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new FirefoxDriver();
             }
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
